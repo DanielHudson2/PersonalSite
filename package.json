@@ -20,5 +20,9 @@
   "homepage": "https://github.com/DanielHudson2/PersonalSite#readme",
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
+  },
+  "dependencies": {
+    "eleventy-sass": "^2.1.7",
+    "sass": "^1.57.1"
   }
 }
