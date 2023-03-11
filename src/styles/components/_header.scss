@@ -1,0 +1,9 @@
+/**
+* HEADER
+**/
+
+header {
+    @include width-and-padding;
+    display: flex;
+    justify-content: space-between;
+}

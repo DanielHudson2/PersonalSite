@@ -3,7 +3,8 @@
 **/
 
 body {
-    background-color: $t-black;
-    color: $t-white;
-    margin-top: rem-calc(20);
+    background-color: $c-secondary;
+    color: $c-white;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
 }

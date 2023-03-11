@@ -1,0 +1,28 @@
+/**
+* BUTTON
+**/
+
+button, .button {
+    background-color: $c-primary;
+    color: $c-secondary;
+    text-decoration: none;
+    padding: rem-calc(10 20);
+
+    &:hover {
+        color: $c-secondary;
+        opacity: 0.9;
+    }
+
+    &[data-variation="hollow"] {
+        background-color: transparent;
+        border: rem-calc(1) solid $c-primary;
+        color: $c-primary;
+    }
+
+    &[data-variation="inline"] {
+        background-color: transparent;
+        color: $c-primary;
+        text-decoration: underline;
+        padding: 0;
+    }
+}

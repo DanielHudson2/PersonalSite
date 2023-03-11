@@ -2,5 +2,21 @@
 * VARIABLES
 **/
 
-$t-white: #ffffff;
-$t-black: #000000;
+/* colors */
+$c-primary: #33CC99;
+$c-secondary: #0A2239;
+$c-grey: #AEAEAE;
+$c-white: #EDEDED;
+$c-black: #0E0E0E;
+
+/* fonts */
+$f-roboto-mono: 'Roboto Mono', monospace;
+$f-permenant-marker: 'Permenant Marker', cursive;
+
+/* layout */
+$l-page-width: rem-calc(1000);
+$l-page-padding--large: rem-calc(0 40);
+$l-page-padding--small: rem-calc(0 20);
+
+/* breakpoints */
+$b-medium: rem-calc(768);

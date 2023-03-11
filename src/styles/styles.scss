@@ -5,4 +5,14 @@
 @import './fonts';
 @import './variables';
 
+// MIXINS
+@import './mixins/layout';
+
+// BASE
 @import './base';
+
+// COMPONENTS
+@import './components/button';
+@import './components/header';
+@import './components/main';
+@import './components/nav';
