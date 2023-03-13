@@ -10,10 +10,12 @@
 @import './mixins/font-styles';
 
 // BASE
+@import './reset';
 @import './base';
 
 // COMPONENTS
 @import './components/button';
+@import './components/columns';
 @import './components/header';
 @import './components/main';
 @import './components/nav';

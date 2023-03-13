@@ -11,6 +11,7 @@ body {
 
 h1, .h1 {
     @include font-style--heading-1;
+    margin-bottom: $l-spacing--small;
 
     &[data-variation="hero"] {
         @include font-style--hero;
@@ -19,27 +20,71 @@ h1, .h1 {
 
 h2, .h2 {
     @include font-style--heading-2;
+    margin-bottom: $l-spacing--small;
 }
 
 h3, .h3 {
     @include font-style--heading-3;
+    margin-bottom: $l-spacing--small;
 }
 
 h4, .h4 {
     @include font-style--heading-4;
+    margin-bottom: $l-spacing--small;
 }
 
 h5, .h5 {
     @include font-style--heading-5;
+    margin-bottom: $l-spacing--small;
 }
 
 h6, .h6 {
     @include font-style--heading-6;
+    margin-bottom: $l-spacing--small;
 }
 
 p {
 
     &[data-variation="tiny"] {
         @include font-style--tiny;
+    }
+
+    &[data-color="primary"] {
+        color: $c-primary;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img-wrap {
+    display: inline-block;
+    position: relative;
+
+    &:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: rem-calc(2) solid $c-primary;
+        top: rem-calc(40);
+        right: rem-calc(-40);
+        position: absolute;
+        z-index: -1;
+    }
+}
+
+.text-align {
+    text-align: left;
+
+    &--right {
+        text-align: right;
+    }
+
+    &--center {
+        text-align: center;
     }
 }

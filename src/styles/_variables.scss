@@ -11,12 +11,15 @@ $c-black: #0E0E0E;
 
 /* fonts */
 $f-roboto-mono: 'Roboto Mono', monospace;
-$f-permenant-marker: 'Permenant Marker', cursive;
+$f-permenant-marker: 'Permanent Marker', cursive;
 
 /* layout */
-$l-page-width: rem-calc(1000);
+$l-header-width: rem-calc(1340);
+$l-page-width: rem-calc(1080);
 $l-page-padding--large: rem-calc(40);
 $l-page-padding--small: rem-calc(20);
+$l-spacing--small: rem-calc(20);
+$l-spacing--large: rem-calc(40);
 
 /* breakpoints */
 $b-medium: rem-calc(768);

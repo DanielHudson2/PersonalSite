@@ -9,4 +9,8 @@ header {
     align-items: center;
     padding-top: rem-calc(50);
     padding-bottom: rem-calc(50);
+
+    @media (min-width: $b-medium) {
+        max-width: $l-header-width;
+    }
 }

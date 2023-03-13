@@ -5,6 +5,7 @@
 @mixin font-style--hero {
     font-family: $f-permenant-marker;
     font-size: rem-calc(80);
+    font-weight: normal;
     line-height: 1.1;
 }
 
@@ -54,14 +55,14 @@
     font-family: $f-roboto-mono;
     font-size: rem-calc(16);
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.5;
 }
 
 @mixin font-style--body-2 {
     font-family: $f-roboto-mono;
     font-size: rem-calc(14);
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.5;
 }
 
 @mixin font-style--tiny {
@@ -69,5 +70,5 @@
     font-size: rem-calc(11);
     font-style: italic;
     font-weight: 400;
-    line-height: 1.1;
+    line-height: 1.5;
 }
