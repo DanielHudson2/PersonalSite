@@ -3,6 +3,7 @@
 **/
 
 button, .button {
+    @include font-style--body-2;
     background-color: $c-primary;
     color: $c-secondary;
     text-decoration: none;

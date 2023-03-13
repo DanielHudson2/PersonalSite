@@ -15,8 +15,8 @@ $f-permenant-marker: 'Permenant Marker', cursive;
 
 /* layout */
 $l-page-width: rem-calc(1000);
-$l-page-padding--large: rem-calc(0 40);
-$l-page-padding--small: rem-calc(0 20);
+$l-page-padding--large: rem-calc(40);
+$l-page-padding--small: rem-calc(20);
 
 /* breakpoints */
 $b-medium: rem-calc(768);

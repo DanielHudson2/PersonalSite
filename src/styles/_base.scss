@@ -3,8 +3,43 @@
 **/
 
 body {
+    @include font-style--body-1;
     background-color: $c-secondary;
     color: $c-white;
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
+}
+
+h1, .h1 {
+    @include font-style--heading-1;
+
+    &[data-variation="hero"] {
+        @include font-style--hero;
+    }
+}
+
+h2, .h2 {
+    @include font-style--heading-2;
+}
+
+h3, .h3 {
+    @include font-style--heading-3;
+}
+
+h4, .h4 {
+    @include font-style--heading-4;
+}
+
+h5, .h5 {
+    @include font-style--heading-5;
+}
+
+h6, .h6 {
+    @include font-style--heading-6;
+}
+
+p {
+
+    &[data-variation="tiny"] {
+        @include font-style--tiny;
+    }
 }

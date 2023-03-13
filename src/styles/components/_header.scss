@@ -6,4 +6,7 @@ header {
     @include width-and-padding;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
 }
