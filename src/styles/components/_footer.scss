@@ -1,0 +1,8 @@
+/**
+* FOOTER
+**/
+
+footer {
+    @include width-and-padding;
+    padding-top: $l-spacing--large
+}

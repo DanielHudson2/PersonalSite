@@ -1,0 +1,16 @@
+/**
+* SECTION
+**/
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: $b-medium) {
+        flex-direction: row;
+    }
+
+    &[data-variation="center"] {
+        justify-content: center;
+    }
+}

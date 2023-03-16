@@ -1,0 +1,30 @@
+/**
+* SOCIALS
+**/
+
+.socials {
+    
+    @media (min-width: $b-medium) {
+        position: absolute;
+        top: 100px;
+        left: -60px;
+    }
+
+    img {
+        box-shadow: none;
+    }
+
+    li {
+        transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+        opacity: 0.9;
+
+        &:not(last-child) {
+            margin-bottom: $l-spacing--small;
+        }
+
+        &:hover {
+            transform: rotate(15deg) scale(1.1);
+            opacity: 1;
+        }
+    }
+}

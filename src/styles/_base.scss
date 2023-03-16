@@ -44,6 +44,7 @@ h6, .h6 {
 }
 
 p {
+    margin-bottom: $l-spacing--small;
 
     &[data-variation="tiny"] {
         @include font-style--tiny;
@@ -51,29 +52,6 @@ p {
 
     &[data-color="primary"] {
         color: $c-primary;
-    }
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.img-wrap {
-    display: inline-block;
-    position: relative;
-
-    &:after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 100%;
-        border: rem-calc(2) solid $c-primary;
-        top: rem-calc(40);
-        right: rem-calc(-40);
-        position: absolute;
-        z-index: -1;
     }
 }
 
