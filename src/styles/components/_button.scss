@@ -9,10 +9,14 @@ button, .button {
     display: inline-block;
     text-decoration: none;
     padding: rem-calc(10 20);
+    transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+    
 
     &:hover {
         color: $c-secondary;
-        opacity: 0.9;
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 0px 0px rgba($c-primary, 0.5),
+        10px 10px 0px 0px rgba($c-black, 0.8);
     }
 
     &[data-variation="hollow"] {
@@ -26,5 +30,9 @@ button, .button {
         color: $c-primary;
         text-decoration: underline;
         padding: 0;
+    }
+
+    & + button, & + .button {
+        margin-left: $l-spacing--small;
     }
 }

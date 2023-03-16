@@ -12,6 +12,9 @@
     }
 
     .column {
-        width: 50%;
+
+        @media (min-width: $b-medium) {
+            width: 50%;
+        }
     }
 }

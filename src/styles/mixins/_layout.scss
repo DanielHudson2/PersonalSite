@@ -5,11 +5,11 @@
 @mixin width-and-padding {
     max-width: $l-page-width;
     margin: 0 auto;
-    padding-right: $l-page-padding--small;
-    padding-left: $l-page-padding--small;
+    padding-right: $l-spacing--small;
+    padding-left: $l-spacing--small;
 
     @media (min-width: $b-medium) {
-        padding-right: $l-page-padding--large;
-        padding-left: $l-page-padding--large;
+        padding-right: $l-spacing--large;
+        padding-left: $l-spacing--large;
     }
 }

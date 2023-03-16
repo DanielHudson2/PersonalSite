@@ -13,7 +13,11 @@ nav {
     }
 
     li {
-        margin: rem-calc(0 10);
+        margin: rem-calc(5 10);
+
+        @media (min-width: $b-medium) {
+            margin: rem-calc(10);
+        }
     }
 
     a {

@@ -3,11 +3,16 @@
 **/
 
 .socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $l-spacing--large 0;
     
     @media (min-width: $b-medium) {
         position: absolute;
         top: 100px;
         left: -60px;
+        flex-direction: column;
     }
 
     img {
@@ -17,14 +22,24 @@
     li {
         transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
         opacity: 0.9;
+        margin: 0 $l-spacing--small;
 
         &:not(last-child) {
-            margin-bottom: $l-spacing--small;
+
+            @media (min-width: $b-medium) {
+                margin-bottom: $l-spacing--small;
+            }
         }
 
         &:hover {
             transform: rotate(15deg) scale(1.1);
             opacity: 1;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

@@ -7,10 +7,26 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: rem-calc(50);
-    padding-bottom: rem-calc(50);
+    padding-top: $l-spacing--small;
+    padding-bottom: $l-spacing--small;
 
     @media (min-width: $b-medium) {
         max-width: $l-header-width;
+        padding-top: rem-calc(50);
+        padding-bottom: rem-calc(50);
+    }
+
+    .site-logo {
+        margin-right: $l-spacing--small;
+
+        img {
+            width: rem-calc(40);
+            height: rem-calc(40);
+
+            @media (min-width: $b-medium) {
+                width: rem-calc(80);
+                height: rem-calc(80);
+            }
+        }
     }
 }

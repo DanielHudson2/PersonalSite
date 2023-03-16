@@ -4,6 +4,10 @@
 
 .cta {
     max-width: rem-calc(500);
-    margin-bottom: $l-spacing--large;
+    margin-bottom: $l-spacing--small;
     text-align: center;
+
+    @media (min-width: $b-medium) {
+        margin-bottom: $l-spacing--large;
+    }
 }

@@ -4,5 +4,9 @@
 
 footer {
     @include width-and-padding;
-    padding-top: $l-spacing--large
+    padding-top: $l-spacing--small;
+
+    @media (min-width: $b-medium) {
+        padding-top: $l-spacing--large;
+    }
 }

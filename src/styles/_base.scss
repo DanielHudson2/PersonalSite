@@ -49,10 +49,10 @@ p {
     &[data-variation="tiny"] {
         @include font-style--tiny;
     }
+}
 
-    &[data-color="primary"] {
-        color: $c-primary;
-    }
+*[data-color="primary"] {
+    color: $c-primary;
 }
 
 .text-align {
