@@ -51,6 +51,10 @@ p {
     }
 }
 
+a {
+    color: $c-white;
+}
+
 *[data-color="primary"] {
     color: $c-primary;
 }

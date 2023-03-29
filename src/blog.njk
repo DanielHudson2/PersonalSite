@@ -1,0 +1,19 @@
+---
+title: Blog | Daniel Hudson
+description: My blog where I ramble on about things that hopefully make some kind of sense.
+layout: base.njk
+---
+<article>
+<h1>Blog</h1>
+<p>View the latest from my blog below:</p>
+
+<ul>
+    {%- for post in collections.post -%}
+        <li>
+            <a href="{{ post.url }}">{{ post.data.title }}</a>
+            <time datetime="{{ post.data.dateTime }}">{{ post.data.postDate }}</time>
+            <p>{{ post.data.description }}</p>
+        </li>
+    {%- endfor -%}
+</ul>
+</article>
