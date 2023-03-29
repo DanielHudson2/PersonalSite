@@ -3,14 +3,15 @@
 **/
 
 button, .button {
-    @include font-style--body-2;
+    @include font-style--body-1;
+    font-weight: 700;
     background-color: $c-primary;
     color: $c-secondary;
     display: inline-block;
     text-decoration: none;
     padding: rem-calc(10 20);
     transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
-    
+    border-radius: rem-calc(5);
 
     &:hover {
         color: $c-secondary;

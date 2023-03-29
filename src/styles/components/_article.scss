@@ -1,0 +1,11 @@
+/**
+* ARTICLE
+**/
+
+article {
+
+    &.post {
+        max-width: rem-calc(600);
+        margin: 0 auto;
+    }
+}

@@ -12,5 +12,6 @@ main {
         position: relative;
         box-shadow: 10px 10px 0px 0px rgba($c-primary, 0.5),
         20px 20px 0px 0px rgba($c-black, 0.8);
+        border-radius: rem-calc(5);
     }
 }

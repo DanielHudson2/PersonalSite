@@ -7,17 +7,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: $l-spacing--small;
-    padding-bottom: $l-spacing--small;
-
-    @media (min-width: $b-medium) {
-        max-width: $l-header-width;
-        padding-top: rem-calc(50);
-        padding-bottom: rem-calc(50);
-    }
+    padding-top: $l-spacing--large;
+    padding-bottom: $l-spacing--large;
 
     .site-logo {
         margin-right: $l-spacing--small;
+        
+        @media (min-width: $b-medium) {
+            margin-right: 0;
+        }
 
         img {
             width: rem-calc(40);
