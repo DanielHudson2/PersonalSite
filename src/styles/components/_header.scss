@@ -4,11 +4,11 @@
 
 header {
     @include width-and-padding;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-top: $l-spacing--large;
     padding-bottom: $l-spacing--large;
+    padding-top: $l-spacing--large;
 
     .site-logo {
         margin-right: $l-spacing--small;
@@ -18,12 +18,12 @@ header {
         }
 
         img {
-            width: rem-calc(40);
             height: rem-calc(40);
-
+            width: rem-calc(40);
+            
             @media (min-width: $b-medium) {
-                width: rem-calc(80);
                 height: rem-calc(80);
+                width: rem-calc(80);
             }
         }
     }

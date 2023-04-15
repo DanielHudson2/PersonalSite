@@ -3,8 +3,16 @@
 **/
 
 .cta {
-    max-width: rem-calc(500);
+    
+    animation: gradient-animation 4s ease infinite;
+    background: $c-primary;
+    background: $g-standard;
+    background-size: 240% 240%;
+    border-radius: rem-calc(5);
+    color: $c-secondary;
     margin-bottom: $l-spacing--small;
+    max-width: rem-calc(500);
+    padding: $l-spacing--small $l-spacing--large;
     text-align: center;
 
     @media (min-width: $b-medium) {

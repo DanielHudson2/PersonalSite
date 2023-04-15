@@ -8,6 +8,11 @@ $c-secondary: #0A2239;
 $c-grey: #AEAEAE;
 $c-white: #EDEDED;
 $c-black: #0E0E0E;
+$c-blue: #00d4ff;
+
+/* gradients */
+$g-standard: linear-gradient(111deg, $c-primary, $c-blue);
+$g-alt: linear-gradient(111deg, $c-blue, $c-primary);
 
 /* fonts */
 $f-body: 'Inter', sans-serif;

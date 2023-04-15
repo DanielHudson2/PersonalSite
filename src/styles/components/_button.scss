@@ -4,34 +4,63 @@
 
 button, .button {
     @include font-style--body-1;
-    font-weight: 700;
-    background-color: $c-primary;
+    background: $c-primary;
+    background: $g-standard;
+    border-radius: rem-calc(5);
     color: $c-secondary;
     display: inline-block;
-    text-decoration: none;
+    font-weight: 700;
     padding: rem-calc(10 20);
-    transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
-    border-radius: rem-calc(5);
+    text-decoration: none;
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
     &:hover {
+        background: $c-blue;
+        background: $g-alt;
         color: $c-secondary;
         transform: translate(-2px, -2px);
-        box-shadow: 5px 5px 0px 0px rgba($c-primary, 0.5),
-        10px 10px 0px 0px rgba($c-black, 0.8);
     }
 
     &[data-variation="hollow"] {
-        background-color: transparent;
+        background: transparent;
         border: rem-calc(1) solid $c-primary;
         color: $c-primary;
     }
 
+    &[data-variation="hollow-dark"] {
+        background: transparent;
+        border: rem-calc(1) solid $c-secondary;
+        color: $c-secondary;
+        position: relative;
+
+        &:after {
+            background-color: $c-secondary;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 0;
+            left: 0;
+            position: absolute;
+            right: 0;
+            transition: height .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+            z-index: -1;
+        }
+
+        &:hover {
+            color: $c-primary;
+
+            &:after {
+                height: 100%;
+            }
+        }
+    }
+
     &[data-variation="inline"] {
-        background-color: transparent;
-        color: $c-primary;
-        text-decoration: underline;
-        padding: 0;
+        background: transparent;
         box-shadow: none;
+        color: $c-primary;
+        padding: 0;
+        text-decoration: underline;
     }
 
     & + button, & + .button {
