@@ -7,7 +7,7 @@ main {
     position: relative;
 
     img {
-        box-shadow: 10px 10px 0px 0px rgba($c-primary, 0.5),20px 20px 0px 0px rgba($c-black, 0.8);
+        transform: rotate(5deg);
         border-radius: rem-calc(5);
         height: auto;
         max-width: 100%;
