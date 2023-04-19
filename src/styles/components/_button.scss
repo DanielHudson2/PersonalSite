@@ -6,8 +6,10 @@ button, .button {
     @include font-style--body-1;
     background: $c-primary;
     background: $g-standard;
+    border: none;
     border-radius: rem-calc(5);
     color: $c-secondary;
+    cursor: pointer;
     display: inline-block;
     font-weight: 700;
     padding: rem-calc(10 20);

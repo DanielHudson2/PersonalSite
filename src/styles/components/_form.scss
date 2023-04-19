@@ -4,6 +4,7 @@
 
 form {
 
+
     label, input, textarea {
         display: block;
         margin-bottom: rem-calc(5);
@@ -11,7 +12,12 @@ form {
     }
 
     input, textarea {
+        @include font-style--body-1;
         padding: rem-calc(10);
         border-radius: rem-calc(5);
+
+        &:invalid {
+            border-color: red;
+        }
     }
 }
