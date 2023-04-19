@@ -1,0 +1,4 @@
+Sitemap: https://www.daniel-hudson.co.uk/sitemap.xml
+
+User-agent: *
+Disallow:
