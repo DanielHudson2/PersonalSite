@@ -1,0 +1,17 @@
+/**
+* FORM
+**/
+
+form {
+
+    label, input, textarea {
+        display: block;
+        margin-bottom: rem-calc(5);
+        width: 100%;
+    }
+
+    input, textarea {
+        padding: rem-calc(10);
+        border-radius: rem-calc(5);
+    }
+}
