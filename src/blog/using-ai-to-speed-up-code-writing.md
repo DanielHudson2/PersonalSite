@@ -1,7 +1,7 @@
 ---
 title: Using AI to speed up code writing
 postDate: 24th March 2023
-dateTime: 2023-03-24
+date: 2023-03-24
 description: I recently needed to modify a WooCommerce variable product page to output all the variations in a table with an add to basket button. This can of course be achieved using a plugin easily but I needed to pull some specific values in certain places so decided to write it myself. 
 ---
 I recently needed to modify a WooCommerce variable product page to output all the variations in a table with an add to basket button. This can of course be achieved using a plugin easily but I needed to pull some specific values in certain places so decided to write it myself.
