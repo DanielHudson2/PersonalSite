@@ -5,9 +5,9 @@
 
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Blog | Daniel Hudson Web Developer</title>
+		<title>The never ending dilema of woocommerce search | Daniel Hudson Web Developer</title>
 		<meta name="author" content="Daniel Hudson">
-		<meta name="description" content="My blog where I ramble on about things that hopefully make some kind of sense.">
+		<meta name="description" content="Through the many years I&#39;ve been working on WooCommerce sites one thing that&#39;s always been a bit of an issue is finding a search that works fast and let&#39;s you fully tweak the UX to make it optimal for the user.">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="stylesheet" href="/styles/styles.css" />
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
@@ -39,27 +39,17 @@
 		</header>
 
 		<main>
-			<article>
-<h1>Blog</h1>
-<p>View the latest from my blog below:</p>
+			<article class="post">
+    <h1>The never ending dilema of woocommerce search</h1>
+    <time datetime="Mon May 15 2023 01:00:00 GMT+0100 (British Summer Time)">15th May 2023</time>
+    <p>Through the many years I've been working on WooCommerce sites one thing that's always been a bit of an issue is finding a search that works fast and let's you fully tweak the UX to make it optimal for the user.</p>
+<p>There are many plugins for this of course, the one we tend to most commonly use is Yith WooCommerce Ajax Search. It's got good flexibility on what you can configure for search and how it's displayed, but if your store has a lot of products on it then things slow down. It suffers the same issue most search plugins also suffer, it has to query the database.</p>
+<p>Querying the database can be fine when the site isn't packed with products but it quickly can be a noticeable slowdown for users and when speed is crucial this could easily start to effect conversion rates.</p>
+<p>Enter Algolia, it's a platform dedicated to search with an abundance of customisation and flexibility in how your data is searched to fine tune it to your exact needs.</p>
+<p>Algolia works by taking a feed of your products and storing it on its own servers that can be queried with it's API, we built a plugin for this which keeps everything up to date in Algolia as product updates are made within WooCommerce, as every WooCommerce site can be different we've made it so we can tailor the solution to any WooCommerce site.</p>
+<p>The freedom just being able to query the API and getting any of the data out we need in specific places means we can design and build any search interface we want and if something's not quite right we can just tweak it til it's working smoothly.</p>
+<p>Algolia search can take search experiences leaps and bounds over what most search plugins can offer finally taking speed to near instant results and allowing bespoke search experiences to be built tailored to specific needs.</p>
 
-<ul><li>
-            <a href="/blog/the-never-ending-dilema-of-woocommerce-search/">The never ending dilema of woocommerce search</a>
-            <time datetime="Mon May 15 2023 01:00:00 GMT+0100 (British Summer Time)">15th May 2023</time>
-            <p>Through the many years I&#39;ve been working on WooCommerce sites one thing that&#39;s always been a bit of an issue is finding a search that works fast and let&#39;s you fully tweak the UX to make it optimal for the user.</p>
-        </li><li>
-            <a href="/blog/creating-my-website-with-eleventy/">Creating my website with eleventy</a>
-            <time datetime="Wed Apr 19 2023 01:00:00 GMT+0100 (British Summer Time)">19th April 2023</time>
-            <p>Something I&#39;ve been saying for a while is that I want to build myself a website, not necessarily to showcase my work but as my own space where I can control everything. It just seemed odd that my career is building websites but I never had one myself.</p>
-        </li><li>
-            <a href="/blog/do-you-really-need-a-css-framework/">Do you really need a CSS framework?</a>
-            <time datetime="Sat Mar 25 2023 00:00:00 GMT+0000 (Greenwich Mean Time)">25th March 2023</time>
-            <p>CSS frameworks are very powerful tools, they can speed up the process of building your site but it can come at the cost of your site looking like many other sites out there if you don&#39;t take the time to go fully in depth on customisation.</p>
-        </li><li>
-            <a href="/blog/using-ai-to-speed-up-code-writing/">Using AI to speed up code writing</a>
-            <time datetime="Fri Mar 24 2023 00:00:00 GMT+0000 (Greenwich Mean Time)">24th March 2023</time>
-            <p>I recently needed to modify a WooCommerce variable product page to output all the variations in a table with an add to basket button. This can of course be achieved using a plugin easily but I needed to pull some specific values in certain places so decided to write it myself.</p>
-        </li></ul>
 </article>
 
 			<ul class="socials">
