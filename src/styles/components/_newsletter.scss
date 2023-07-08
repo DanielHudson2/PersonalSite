@@ -1,0 +1,23 @@
+/**
+* NEWSLETTER
+**/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $l-spacing--small 0;
+
+    > p {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+        max-width: unset;
+
+        .formkit-powered-by-convertkit {
+            color: $c-white;
+        }
+    }
+}
