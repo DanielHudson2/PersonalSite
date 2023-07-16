@@ -1,0 +1,11 @@
+/**
+* FEATURED-BLOGS
+**/
+
+.featured-blogs {
+
+    li {
+        border-left: rem-calc(1) solid $c-primary;
+        padding-left: $l-spacing--tiny;
+    }
+}

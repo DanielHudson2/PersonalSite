@@ -17,7 +17,7 @@ layout: base.njk
         <p><a class="button" href="/about-me/">About me</a><a class="button" href="/blog/">Blog</a></p>
 
         <h2 class="h3">Latest from my blog</h2>
-        <ul>
+        <ul class="featured-blogs">
             {% set homeblogposts = collections.post | limit(5) | reverse %}
             {%- for post in homeblogposts -%}
             <li>
