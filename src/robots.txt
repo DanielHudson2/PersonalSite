@@ -1,4 +1,6 @@
-Sitemap: https://www.daniel-hudson.co.uk/sitemap.xml
-
 User-agent: *
-Disallow:
+Allow: /
+
+Host: https://www.daniel-hudson.co.uk/
+
+Sitemap: https://www.daniel-hudson.co.uk/sitemap.xml

@@ -5,6 +5,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventySass);
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPassthroughCopy('src/assets');
+    eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
     eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
     return {
         dir: {
