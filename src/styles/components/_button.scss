@@ -23,6 +23,10 @@ button, .button {
         transform: translate(-2px, -2px);
     }
 
+    &[data-variation="small"] {
+        padding: rem-calc(5 10);
+    }
+
     &[data-variation="hollow"] {
         background: transparent;
         border: rem-calc(1) solid $c-primary;
