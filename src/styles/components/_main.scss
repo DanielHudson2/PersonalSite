@@ -11,6 +11,7 @@ main {
         border-radius: rem-calc(5);
         height: auto;
         max-width: 100%;
-        position: relative;
+        position: sticky;
+        top: rem-calc(40);
     }
 }
