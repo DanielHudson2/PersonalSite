@@ -9,13 +9,13 @@ layout: base.njk
     <h1 data-variation="hero">Services</h1>
     <p>I can provide a number of web development services, find out more below.</p>
 
-    <div class="[ feature-grid ] [ grid ]">
+    <div class="[ feature-grid ] [ grid ]" role="list">
 
         {% for page in collections.servicesPages %}
 
             <div class="feature">
 
-                <h3>{{ page.data.title }}</h3>
+                <h3><a href="{{ page.url }}">{{ page.data.title }}</a></h3>
 
                 <p>{{ page.data.shortDescription }}</p>
 
