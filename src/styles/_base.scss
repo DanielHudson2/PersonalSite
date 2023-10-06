@@ -71,6 +71,10 @@ a {
     }
 }
 
+.container {
+    @include width-and-padding;
+}
+
 time {
     display: block;
     font-style: italic;
@@ -86,4 +90,8 @@ pre {
     border-radius: rem-calc(5);
     padding: $l-spacing--small;
     color: $c-primary;
+}
+
+.long-text > * {
+    max-width: 60ch;
 }

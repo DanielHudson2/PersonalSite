@@ -4,18 +4,22 @@ description: My blog where I ramble on about things that hopefully make some kin
 layout: base.njk
 ---
 
-<h1>Blog</h1>
-<p>View the latest from my blog below:</p>
+<div class="container">
 
-<ul class="blog-list grid">
-    {%- for post in collections.post | reverse -%}
-        <li class="post">
-            <h3><a class="blog-list__title" href="{{ post.url }}">{{ post.data.title }}</a></h3>
-            <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
-            <p>{{ post.data.shortDescription }}</p>
-            <div>
-                <a class="button" data-variation="primary" href="{{ post.url }}">Read more</a>
-            </div>
-        </li>
-    {%- endfor -%}
-</ul>
+    <h1>Blog</h1>
+    <p>View the latest from my blog below:</p>
+
+    <ul class="blog-list grid">
+        {%- for post in collections.post | reverse -%}
+            <li class="post">
+                <h3><a class="blog-list__title" href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
+                <p>{{ post.data.shortDescription }}</p>
+                <div>
+                    <a class="button" data-variation="primary" href="{{ post.url }}">Read more</a>
+                </div>
+            </li>
+        {%- endfor -%}
+    </ul>
+
+</div>

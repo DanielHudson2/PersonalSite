@@ -4,39 +4,41 @@ description: My name is Daniel Hudson, I am a web developer specialising in fron
 layout: base.njk
 ---
 
-<p data-color="primary">Hello there, i'm</p>
-<h1 data-variation="hero">Daniel Hudson <br />I'm a <span data-color="primary">Web Developer</span></h1>
+<div class="container">
+    <p data-color="primary">Hello there, i'm</p>
+    <h1 data-variation="hero">Daniel Hudson <br />I'm a <span data-color="primary">Web Developer</span></h1>
 
-<div class="columns" data-variation="col-50">
+    <div class="columns" data-variation="col-50">
 
-    <div class="column">
+        <div class="column">
 
-        <p>I'm a seasoned Front-End Web Developer with 8 years of expertise in creating engaging user interfaces and interactive web applications, I have a proven track record of delivering visually appealing websites with seamless user experiences.</p>
-        <p>With a deep understanding of HTML, CSS, and JavaScript, I am skilled in creating responsive and accessible websites that work well on all devices.</p>
+            <p>I'm a seasoned Front-End Web Developer with 8 years of expertise in creating engaging user interfaces and interactive web applications, I have a proven track record of delivering visually appealing websites with seamless user experiences.</p>
+            <p>With a deep understanding of HTML, CSS, and JavaScript, I am skilled in creating responsive and accessible websites that work well on all devices.</p>
 
-        <p><a class="button" href="/about-me/">About me</a><a class="button" href="/blog/">Blog</a></p>
+            <p><a class="button" href="/about-me/">About me</a><a class="button" href="/blog/">Blog</a></p>
 
-        <h2 class="h3">Latest from my blog</h2>
-        <ul class="featured-blogs">
-            {% set homeblogposts = collections.post | limit(5) | reverse %}
-            {%- for post in homeblogposts -%}
-            <li>
-                <a href="{{ post.url }}">{{ post.data.title }}</a>
-                <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
-            </li>
-            {%- endfor -%}
-        </ul>
-        <p><a class="button" data-variation="inline" href="/blog/">View all posts</a></p>
+            <h2 class="h3">Latest from my blog</h2>
+            <ul class="featured-blogs">
+                {% set homeblogposts = collections.post | limit(5) | reverse %}
+                {%- for post in homeblogposts -%}
+                <li>
+                    <a href="{{ post.url }}">{{ post.data.title }}</a>
+                    <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
+                </li>
+                {%- endfor -%}
+            </ul>
+            <p><a class="button" data-variation="inline" href="/blog/">View all posts</a></p>
+
+        </div>
+
+        <div class="column text-align--center">
+
+            <picture>
+                <source srcset="/assets/images/daniel-hudson.webp" type="image/webp" />
+                <img src="/assets/images/daniel-hudson.jpeg" width="400" height="400" alt="Web Developer Daniel Hudson" />
+            </picture>
+
+        </div>
 
     </div>
-
-    <div class="column text-align--center">
-
-        <picture>
-            <source srcset="/assets/images/daniel-hudson.webp" type="image/webp" />
-            <img src="/assets/images/daniel-hudson.jpeg" width="400" height="400" alt="Web Developer Daniel Hudson" />
-        </picture>
-
-    </div>
-
 </div>

@@ -6,31 +6,35 @@ layout: base.njk
 
 <article>
 
-    <h1>Get in touch</h1>
-    <p>You can get in touch via socials or this form.<br />
-    I'll get back to you as soon as I can.</p>
+    <div class="container">
 
-    <form name="get-in-touch" method="POST" data-netlify="true">
+        <h1>Get in touch</h1>
+        <p>You can get in touch via socials or this form.<br />
+        I'll get back to you as soon as I can.</p>
 
-        <p>
-            <label for="name">Name</label>
-            <input type="text" name="name" />
-        </p>
+        <form name="get-in-touch" method="POST" data-netlify="true">
 
-        <p>
-            <label for="contact-email">Contact Email <small>(required)</small></label>
-            <input type="email" name="contact-email" required />
-        </p>
+            <p>
+                <label for="name">Name</label>
+                <input type="text" name="name" />
+            </p>
 
-        <p>
-            <label for="message">Message</label>
-            <textarea name="message"></textarea>
-        </p>
+            <p>
+                <label for="contact-email">Contact Email <small>(required)</small></label>
+                <input type="email" name="contact-email" required />
+            </p>
 
-        <p>
-            <button type="submit">Get in touch</button>
-        </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea name="message"></textarea>
+            </p>
 
-    </form>
+            <p>
+                <button type="submit">Get in touch</button>
+            </p>
+
+        </form>
+
+    </div>
 
 </article>
