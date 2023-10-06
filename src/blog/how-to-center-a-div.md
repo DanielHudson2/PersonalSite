@@ -44,7 +44,7 @@ Grid is another CSS layout model that can be used to center elements. This metho
   How to center a div</a> by Daniel Hudson (<a href="https://codepen.io/DanielHudsonDev">@DanielHudsonDev</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<script defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 
 ## Conclusion
