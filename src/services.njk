@@ -1,0 +1,28 @@
+---
+title: Services 
+description: Web Development Services in Gloucestershire.
+layout: base.njk
+---
+
+<h1 data-variation="hero">Services</h1>
+<p>I can provide a number of web development services, find out more below.</p>
+
+<div class="[ feature-grid ] [ grid ]">
+
+    {% for page in collections.servicesPages %}
+
+        <div class="feature">
+
+            <h3>{{ page.data.title }}</h3>
+
+            <p>{{ page.data.shortDescription }}</p>
+
+            <div>
+                <a class="button" data-variation="primary" href="{{ page.url }}">Read more</a>
+            </div>
+
+        </div>
+
+    {% endfor %}
+
+</div>

@@ -1,0 +1,15 @@
+/**
+* FEATURE-GRID
+**/
+
+.feature-grid {
+
+    .feature {
+        position: relative;
+        background-color: rgba($c-white, 0.8);
+        border-radius: rem-calc(5);
+        padding: $l-spacing--small;
+        color: $c-black;
+        border: 2px solid $c-grey;
+    }
+}

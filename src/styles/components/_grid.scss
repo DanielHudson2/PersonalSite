@@ -10,8 +10,4 @@
     @media (min-width: $b-medium) {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    @media (min-width: $b-large) {
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

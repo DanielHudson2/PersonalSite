@@ -3,7 +3,7 @@
 **/
 
 button, .button {
-    @include font-style--body-1;
+    @include font-style--body-2;
     background: $c-primary;
     background: $g-standard;
     border: none;
@@ -71,5 +71,20 @@ button, .button {
 
     & + button, & + .button {
         margin-left: $l-spacing--small;
+    }
+
+    &.breakout-button {
+        position: static;
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+        }
     }
 }
