@@ -7,6 +7,11 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
     eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
+    eleventyConfig.addCollection("servicesPages", function (collection) {
+        return collection.getAll().filter(function (item) {
+            return item.inputPath.includes("/services/");
+        });
+    });
     return {
         dir: {
             input: "src",
