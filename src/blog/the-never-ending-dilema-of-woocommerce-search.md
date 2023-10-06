@@ -3,6 +3,7 @@ title: The never ending dilema of woocommerce search
 postDate: 15th May 2023
 date: 2023-05-15
 description: In this post by Gloucestershire Web Developer Daniel Hudson the various options for providing search functionality for WooCommerce is dicussed.
+shortDescription: Through the many years I've been working on WooCommerce sites one thing that's always been a bit of an issue is finding a search that works fast and let's you fully tweak the UX to make it optimal for the user.
 ---
 
 Through the many years I've been working on WooCommerce sites one thing that's always been a bit of an issue is finding a search that works fast and let's you fully tweak the UX to make it optimal for the user.

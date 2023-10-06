@@ -12,7 +12,7 @@ layout: base.njk
         <li class="post">
             <h3><a class="blog-list__title" href="{{ post.url }}">{{ post.data.title }}</a></h3>
             <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
-            <p>{{ post.data.description }}</p>
+            <p>{{ post.data.shortDescription }}</p>
             <div>
                 <a class="button" data-variation="primary" href="{{ post.url }}">Read more</a>
             </div>

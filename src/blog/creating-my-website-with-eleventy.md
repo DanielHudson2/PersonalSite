@@ -3,6 +3,7 @@ title: Creating my website with eleventy
 postDate: 19th April 2023
 date: 2023-04-19
 description: In this post I, a Gloucestershire Web Developer talk through building my personal site using Eleventy a static site generator.
+shortDescription: Most of my work is building sites with a CMS (usually WordPress) for clients this way they can use it with no technical expertise, but I have technical expertise and with that in mind I decided a static site would more than meet my needs.
 ---
 ## Choosing the platform
 

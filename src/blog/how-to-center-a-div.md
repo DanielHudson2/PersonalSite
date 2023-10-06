@@ -3,6 +3,7 @@ title: How to center a div
 postDate: 08th July 2023
 date: 2023-07-08
 description: Centering a div is something that I see come up a lot, so here's the best three methods to center a div.
+shortDescription: Centering a div is something that I see come up a lot, so here's the best three methods to center a div.
 ---
 Centering a div is a common task in web development, and it is important to do it right. In this tutorial, I will show you the best methods to center a div and improve the visual appeal of your website.
 
