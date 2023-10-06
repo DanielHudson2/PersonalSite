@@ -2,7 +2,7 @@
 title: Creating my website with eleventy
 postDate: 19th April 2023
 date: 2023-04-19
-description: Something I've been saying for a while is that I want to build myself a website, not necessarily to showcase my work but as my own space where I can control everything. It just seemed odd that my career is building websites but I never had one myself.
+description: In this post I, a Gloucestershire Web Developer talk through building my personal site using Eleventy a static site generator.
 ---
 ## Choosing the platform
 
