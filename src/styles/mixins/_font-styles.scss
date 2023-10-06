@@ -81,21 +81,21 @@
 
 @mixin font-style--body-1 {
     font-family: $f-body;
-    font-size: rem-calc(16);
+    font-size: rem-calc(20);
     font-weight: 400;
     line-height: 1.5;
 }
 
 @mixin font-style--body-2 {
     font-family: $f-body;
-    font-size: rem-calc(14);
+    font-size: rem-calc(16);
     font-weight: 400;
     line-height: 1.5;
 }
 
 @mixin font-style--tiny {
     font-family: $f-body;
-    font-size: rem-calc(11);
+    font-size: rem-calc(12);
     font-style: italic;
     font-weight: 400;
     line-height: 1.5;
