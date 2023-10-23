@@ -1,0 +1,52 @@
+/**
+* NAIVCON
+**/
+
+.navicon {
+    display: block;
+    width: rem-calc(25);
+    height: rem-calc(2);
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    background-color: $c-primary;
+    border-radius: rem-calc(5);
+    transition: background-color 0.3s;
+
+    @media (min-width: $b-medium) {
+        display: none;
+    }
+
+    &:before, &:after {
+        content: "";
+        height: rem-calc(2);
+        width: 100%;
+        display: block;
+        background-color: $c-primary;
+        position: absolute;
+        border-radius: rem-calc(5);
+        transition: transform 0.3s;
+    }
+
+    &:before {
+        top: rem-calc(-8);
+    }
+
+    &:after {
+        bottom: rem-calc(-8);
+    }
+
+    &.active {
+        background-color: transparent;
+
+        &:after {
+            top: 0;
+            transform: rotate(-45deg);
+        }
+
+        &:before {
+            top: 0;
+            transform: rotate(45deg);
+        }
+    }
+}

@@ -45,4 +45,12 @@ header {
             }
         }
     }
+
+    .menu-open & {
+        backdrop-filter: unset;
+
+        .site-logo {
+            z-index: 3;
+        }
+    }
 }

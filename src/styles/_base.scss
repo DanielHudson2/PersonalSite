@@ -7,6 +7,11 @@ body {
     background-color: $c-secondary;
     color: $c-white;
     margin: 0;
+
+    &.menu-open {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 h1, .h1 {
@@ -94,4 +99,11 @@ pre {
 
 .long-text > * {
     max-width: 60ch;
+}
+
+.mobile {
+    
+    @media (min-width: $b-medium) {
+        display: none;
+    }
 }
