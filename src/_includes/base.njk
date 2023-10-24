@@ -9,7 +9,8 @@
 		<meta name="author" content="{{ site.authorName }}">
 		<meta name="description" content="{{ description }}">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="stylesheet" href="/styles/styles.css" />
+		<link rel="stylesheet" href="/styles/tailwind.css" />
+		{# <link rel="stylesheet" href="/styles/styles.css" /> #}
 		<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
@@ -20,17 +21,17 @@
 
 	</head>
 
-	<body>
+	<body class="bg-secondary">
 
-		<header role="banner" class="site-header">
+		<header role="banner" class="site-header flex justify-around">
 
 			<div class="site-logo"><a href="/"><img src="/assets/images/logo.svg" width="80" height="80" alt="Daniel Hudson Website Logo" /></a></div>
 
 			<span class="navicon"></span>
 
-			<nav class="site-nav">
+			<nav class="site-nav flex content-center">
 
-				<ul>
+				<ul class="flex justify-center content-center">
 					<li><a href="/services/">Services</a></li>
 					<li><a href="/about-me/">About me</a></li>
 					<li><a href="/blog/">Blog</a></li>
