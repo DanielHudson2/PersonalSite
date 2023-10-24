@@ -11,7 +11,7 @@ layout: base.njk
 
     <div class="[ feature-grid ] [ grid ]" role="list">
 
-        {%- for post in collections.post | reverse -%}
+        {%- for post in collections.post | sortByDate -%}
 
             <div class="feature">
 

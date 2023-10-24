@@ -19,7 +19,7 @@ layout: base.njk
 
             <h2 class="h3">Latest from my blog</h2>
             <ul class="featured-blogs">
-                {% set homeblogposts = collections.post | limit(5) | reverse %}
+                {% set homeblogposts = collections.post | sortByDate | limit(5) %}
                 {%- for post in homeblogposts -%}
                 <li>
                     <a href="{{ post.url }}">{{ post.data.title }}</a>

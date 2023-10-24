@@ -13,6 +13,11 @@ module.exports = function (eleventyConfig) {
             return item.inputPath.includes("/services/");
         });
     });
+    eleventyConfig.addNunjucksFilter("sortByDate", (posts) => {
+        return posts.slice().sort((a, b) => {
+          return new Date(b.data.date) - new Date(a.data.date);
+        });
+    });
     return {
         dir: {
             input: "src",
