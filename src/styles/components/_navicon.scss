@@ -10,7 +10,7 @@
     z-index: 3;
     position: relative;
     background-color: $c-primary;
-    border-radius: rem-calc(5);
+    border-radius: rem-calc(10);
     transition: background-color 0.3s;
 
     @media (min-width: $b-medium) {
@@ -24,7 +24,7 @@
         display: block;
         background-color: $c-primary;
         position: absolute;
-        border-radius: rem-calc(5);
+        border-radius: rem-calc(10);
         transition: transform 0.3s;
     }
 

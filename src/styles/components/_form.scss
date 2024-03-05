@@ -14,7 +14,7 @@ form {
     input, textarea {
         @include font-style--body-1;
         padding: rem-calc(10);
-        border-radius: rem-calc(5);
+        border-radius: rem-calc(10);
 
         &:invalid {
             border-color: red;

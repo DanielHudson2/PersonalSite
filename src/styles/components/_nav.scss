@@ -35,6 +35,10 @@ nav {
         }
     }
 
+    .button {
+        display: block;
+    }
+
     .menu-open & {
         display: block;
         position: fixed;
