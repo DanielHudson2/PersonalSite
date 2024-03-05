@@ -41,4 +41,27 @@ layout: base.njk
         </div>
 
     </div>
+
+    <h2>Services</h2>
+
+    <div class="[ feature-grid ] [ grid ]" role="list">
+
+        {% for page in collections.servicesPages %}
+
+            <div class="feature">
+
+                <h3><a href="{{ page.url }}">{{ page.data.title }}</a></h3>
+
+                <p>{{ page.data.shortDescription }}</p>
+
+                <div>
+                    <a class="button" data-variation="primary" href="{{ page.url }}">Read more</a>
+                </div>
+
+            </div>
+
+        {% endfor %}
+
+    </div>
+
 </div>
