@@ -36,7 +36,10 @@ nav {
     }
 
     .button {
-        display: block;
+        
+        @media (min-width: $b-medium) {
+            display: block;
+        }
     }
 
     .menu-open & {
