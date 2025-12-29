@@ -1,6 +1,8 @@
-const pluginRss = require("@11ty/eleventy-plugin-rss");
+import path from "node:path";
+import * as sass from "sass";
+import pluginRss from "@11ty/eleventy-plugin-rss";
 
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginRss);
     eleventyConfig.addPassthroughCopy('src/assets');
     eleventyConfig.addPassthroughCopy('src/scripts');
