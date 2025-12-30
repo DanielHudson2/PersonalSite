@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --formats=scss",
-    "build": "npx @11ty/eleventy --formats=scss"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,12 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
+    "autoprefixer": "^10.4.23",
+    "esbuild": "^0.27.2",
+    "postcss": "^8.5.6",
+    "postcss-csso": "^6.0.1",
+    "postcss-import": "^16.1.1",
+    "postcss-nested": "^7.0.2",
     "sass": "^1.97.1"
   },
   "type": "module"

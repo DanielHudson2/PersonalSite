@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+body {
+    background-color: var(--global--color--base);
+    color: var(--global--color--contrast);
+    font-family: var(--global--font-family--primary);
+    font-size: var(--global--font-size--md);
+    font-weight: var(--global--typography--font-weight--body);
+    letter-spacing: var(--global--typography--letter-spacing--normal);
+    line-height: var(--global--typography--line-height--normal);
+}

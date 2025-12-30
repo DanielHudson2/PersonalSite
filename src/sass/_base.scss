@@ -3,49 +3,13 @@
 **/
 
 body {
-    @include font-style--body-1;
-    background-color: $c-secondary;
-    color: $c-white;
+
     margin: 0;
 
     &.menu-open {
         height: 100vh;
         overflow: hidden;
     }
-}
-
-h1, .h1 {
-    @include font-style--heading-1;
-    margin-bottom: $l-spacing--small;
-
-    &[data-variation="hero"] {
-        @include font-style--hero;
-    }
-}
-
-h2, .h2 {
-    @include font-style--heading-2;
-    margin-bottom: $l-spacing--small;
-}
-
-h3, .h3 {
-    @include font-style--heading-3;
-    margin-bottom: $l-spacing--small;
-}
-
-h4, .h4 {
-    @include font-style--heading-4;
-    margin-bottom: $l-spacing--small;
-}
-
-h5, .h5 {
-    @include font-style--heading-5;
-    margin-bottom: $l-spacing--small;
-}
-
-h6, .h6 {
-    @include font-style--heading-6;
-    margin-bottom: $l-spacing--small;
 }
 
 p {
@@ -102,7 +66,7 @@ pre {
 }
 
 .mobile {
-    
+
     @media (min-width: $b-medium) {
         display: none;
     }

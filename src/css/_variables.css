@@ -1,0 +1,104 @@
+:root {
+    /* Primitive Colours */
+    --global--color--primitive--neutral--0: #ffffff;
+    --global--color--primitive--neutral--50: #F5F6F7;
+	--global--color--primitive--neutral--100: #EDEFF1;
+	--global--color--primitive--neutral--200: #D8DCDF;
+    --global--color--primitive--neutral--300: #B5BEC4;
+    --global--color--primitive--neutral--400: #8D9AA3;
+    --global--color--primitive--neutral--500: #6F7E88;
+    --global--color--primitive--neutral--600: #5A666F;
+    --global--color--primitive--neutral--700: #49535B;
+    --global--color--primitive--neutral--800: #3F474D;
+    --global--color--primitive--neutral--900: #383D42;
+    --global--color--primitive--neutral--950: #25282C;
+    --global--color--primitive--neutral--1000: #000000;
+
+    --global--color--primitive--primary--50: #E4F8D3;
+	--global--color--primitive--primary--100: #C0F1B1;
+	--global--color--primitive--primary--200: #90E990;
+    --global--color--primitive--primary--300: #70E189;
+    --global--color--primitive--primary--400: #51D78C;
+    --global--color--primitive--primary--500: #33CC99;
+    --global--color--primitive--primary--600: #2CBAA2;
+    --global--color--primitive--primary--700: #25A6A7;
+    --global--color--primitive--primary--800: #1F7F93;
+    --global--color--primitive--primary--900: #1A5C80;
+    --global--color--primitive--primary--950: #143E6B;
+
+    --global--color--primitive--secondary--50: #E6ECE8;
+	--global--color--primitive--secondary--100: #B9C9C2;
+	--global--color--primitive--secondary--200: #8DA5A1;
+    --global--color--primitive--secondary--300: #618082;
+    --global--color--primitive--secondary--400: #35535D;
+    --global--color--primitive--secondary--500: #0A2239;
+    --global--color--primitive--secondary--600: #091835;
+    --global--color--primitive--secondary--700: #070E31;
+    --global--color--primitive--secondary--800: #06062D;
+    --global--color--primitive--secondary--900: #0B0529;
+    --global--color--primitive--secondary--950: #0F0424;
+    --global--color--primitive--error--100: #FFF1F2;
+    --global--color--primitive--error--200: #F44336;
+    --global--color--primitive--error--300: #B71C1C;
+    --global--color--primitive--warning--100: #F9EACC;
+    --global--color--primitive--warning--200: #EDB95E;
+    --global--color--primitive--warning--300: #C75F18;
+    --global--color--primitive--success--100: #E0F4D3;
+    --global--color--primitive--success--200: #67C23A;
+    --global--color--primitive--success--300: #29491E;
+
+    /* Colours */
+    --global--color--brand: var(--global--color--primitive--primary--500);
+    --global--color--base: var(--global--color--primitive--secondary--500);
+    --global--color--contrast: var(--global--color--primitive--secondary--50);
+
+    /* Font Sizes */
+    --global--font-size--xs: 12px;
+    --global--font-size--sm: 16px;
+    --global--font-size--md: clamp(1.2rem, 1.1795rem + 0.0909vw, 1.25rem);
+    --global--font-size--lg: clamp(1.44rem, 1.3899rem + 0.2227vw, 1.5625rem);
+    --global--font-size--xl: clamp(1.728rem, 1.6359rem + 0.4093vw, 1.9531rem);
+    --global--font-size--2-xl: clamp(2.0736rem, 1.9231rem + 0.6687vw, 2.4414rem);
+    --global--font-size--3-xl: clamp(2.4883rem, 2.2578rem + 1.0244vw, 3.0518rem);
+    --global--font-size--5-xl: clamp(2.25rem, 0.9559rem + 6.4706vw, 5rem);
+
+    /* Font Families */
+    --global--font-family--primary: 'Inter', sans-serif;
+    --global--font-family--secondary: 'IBM Plex Serif', serif;
+
+    /* Spacing */
+    --global--spacing--xs: 4px;
+    --global--spacing--sm: 8px;
+    --global--spacing--md: clamp(10px, 6.6667px + 0.4167vw, 12px);
+    --global--spacing--lg: clamp(12px, 10.6667px + 0.4167vw, 16px);
+    --global--spacing--xl: clamp(16px, 13.3333px + 0.8333vw, 24px);
+    --global--spacing--2-xl: clamp(24px, 21.3333px + 0.8333vw, 32px);
+    --global--spacing--3-xl: clamp(32px, 26.6667px + 1.6667vw, 48px);
+    --global--spacing--4-xl: clamp(40px, 42.6667px + 1.6667vw, 64px);
+    --global--spacing--5-xl: clamp(48px, 37.3333px + 3.3333vw, 80px);
+    --global--spacing--6-xl: clamp(64px, 53.3333px + 3.3333vw, 96px);
+    --global--spacing--7-xl: clamp(80px, 69.3333px + 3.3333vw, 112px);
+    --global--spacing--8-xl: clamp(96px, 85.3333px + 3.3333vw, 128px);
+    --global--spacing--9-xl: clamp(128px, 119.3333px + 2.7083vw, 166px);
+
+    /* Layout */
+    --global--layout--wide: 1280px;
+    --global--layout--normal: 768px;
+
+    /* Typography */
+    --global--typography--font-weight--body: 400;
+    --global--typography--font-weight--heading: 400;
+
+    --global--typography--line-height--none: 1;
+    --global--typography--line-height--tight: 1.1;
+    --global--typography--line-height--snug: 1.375;
+    --global--typography--line-height--normal: 1.5;
+    --global--typography--line-height--relaxed: 1.6;
+    --global--typography--line-height--loose: 2;
+
+    --global--typography--letter-spacing--tighter: -0.05em;
+    --global--typography--letter-spacing--tight: -0.025em;
+    --global--typography--letter-spacing--normal: 0em;
+    --global--typography--letter-spacing--wide: 0.025em;
+    --global--typography--letter-spacing--wider: 0.05em;
+}
