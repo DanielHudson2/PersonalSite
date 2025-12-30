@@ -1,50 +1,20 @@
-import path from "node:path";
-import * as sass from "sass";
 import pluginRss from "@11ty/eleventy-plugin-rss";
+import templateFilters from "./plugins/templateFilters.js";
+import collections from "./plugins/collections.js";
+import processJs from "./plugins/processJs.js";
+import processCss from "./plugins/processCss.js";
 
 export default function (eleventyConfig) {
+    // Plugins
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(processCss);
+    eleventyConfig.addPlugin(processJs);
+    eleventyConfig.addPlugin(templateFilters);
+    eleventyConfig.addPlugin(collections);
+
+    // Passthrough Copies
     eleventyConfig.addPassthroughCopy('src/assets');
-    eleventyConfig.addPassthroughCopy('src/scripts');
     eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
-    eleventyConfig.addNunjucksFilter("limit", (arr, limit) => arr.slice(0, limit));
-
-    eleventyConfig.addCollection("servicesPages", function (collection) {
-        return collection.getAll().filter(function (item) {
-            return item.inputPath.includes("/services/");
-        });
-    });
-
-    eleventyConfig.addNunjucksFilter("sortByDate", (posts) => {
-        return posts.slice().sort((a, b) => {
-          return new Date(b.data.date) - new Date(a.data.date);
-        });
-    });
-
-    eleventyConfig.addExtension("scss", {
-		outputFileExtension: "css",
-		useLayouts: false,
-
-		compile: async function (inputContent, inputPath) {
-			let parsed = path.parse(inputPath);
-			if(parsed.name.startsWith("_")) {
-				return;
-			}
-
-			let result = sass.compileString(inputContent, {
-				loadPaths: [
-					parsed.dir || ".",
-					this.config.dir.includes,
-				]
-			});
-
-			this.addDependencies(inputPath, result.loadedUrls);
-
-			return async (data) => {
-				return result.css;
-			};
-		},
-	});
 
     return {
         dir: {
