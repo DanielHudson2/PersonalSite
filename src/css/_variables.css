@@ -1,6 +1,7 @@
 :root {
+
     /* Primitive Colours */
-    --global--color--primitive--neutral--0: #ffffff;
+    --global--color--primitive--neutral--0: #fff;
     --global--color--primitive--neutral--50: #F5F6F7;
 	--global--color--primitive--neutral--100: #EDEFF1;
 	--global--color--primitive--neutral--200: #D8DCDF;
@@ -12,14 +13,14 @@
     --global--color--primitive--neutral--800: #3F474D;
     --global--color--primitive--neutral--900: #383D42;
     --global--color--primitive--neutral--950: #25282C;
-    --global--color--primitive--neutral--1000: #000000;
+    --global--color--primitive--neutral--1000: #000;
 
     --global--color--primitive--primary--50: #E4F8D3;
 	--global--color--primitive--primary--100: #C0F1B1;
 	--global--color--primitive--primary--200: #90E990;
     --global--color--primitive--primary--300: #70E189;
     --global--color--primitive--primary--400: #51D78C;
-    --global--color--primitive--primary--500: #33CC99;
+    --global--color--primitive--primary--500: #3C9;
     --global--color--primitive--primary--600: #2CBAA2;
     --global--color--primitive--primary--700: #25A6A7;
     --global--color--primitive--primary--800: #1F7F93;
@@ -84,6 +85,7 @@
     /* Layout */
     --global--layout--wide: 1280px;
     --global--layout--normal: 768px;
+    --global--layout--edge: var(--global--spacing--2-xl);
 
     /* Typography */
     --global--typography--font-weight--body: 400;
@@ -98,7 +100,12 @@
 
     --global--typography--letter-spacing--tighter: -0.05em;
     --global--typography--letter-spacing--tight: -0.025em;
-    --global--typography--letter-spacing--normal: 0em;
+    --global--typography--letter-spacing--normal: 0;
     --global--typography--letter-spacing--wide: 0.025em;
     --global--typography--letter-spacing--wider: 0.05em;
+
+    /* Transitions */
+    --global--transition--duration--quick: 150ms;
+    --global--transition--duration--normal: 300ms;
+    --global--transition--duration--slow: 600ms;
 }

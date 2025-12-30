@@ -1,0 +1,32 @@
+<button
+    class="site-navigation__toggle"
+    aria-label="Open navigation menu"
+    aria-expanded="false"
+>
+    <span
+        class="site-navigation__toggle-icon"
+        aria-hidden="true"
+    ></span>
+</button>
+
+<nav class="site-navigation">
+    <ul class="site-navigation__list">
+        {% for item in siteNavigation %}
+            {% if item.link == page.url %}
+                {% set current = 'aria-current="page"' %}
+            {% else %}
+                {% set current = '' %}
+            {% endif %}
+
+            <li class="site-navigation__item">
+                <a
+                    class="site-navigation__link"
+                    href="{{ item.link }}"
+                    {{ current | safe }}
+                >
+                    {{ item.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>

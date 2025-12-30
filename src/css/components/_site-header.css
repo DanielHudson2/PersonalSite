@@ -1,0 +1,14 @@
+.site-header {
+    background-color: var(--global--color--base);
+    position: sticky;
+    top: 0;
+
+    &__inner {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--global--spacing--xl);
+        justify-content: space-between;
+        padding-block: var(--global--spacing--xl);
+    }
+}

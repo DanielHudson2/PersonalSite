@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "About Me",
+    "link": "/about-me/"
+  },
+  {
+    "title": "Blog",
+    "link": "/blog/"
+  },
+  {
+    "title": "Get in touch",
+    "link": "/get-in-touch/",
+    "class": "button",
+    "data": {
+      "variation": "small"
+    }
+  }
+]

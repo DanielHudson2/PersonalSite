@@ -18,24 +18,7 @@
 	</head>
 
 	<body>
-		<header class="site-header">
-			<div class="site-logo">
-                <a href="/">
-                    <img src="/assets/images/logo.svg" width="80" height="80" alt="Daniel Hudson Website Logo" />
-                </a>
-            </div>
-
-			<span class="navicon"></span>
-
-			<nav class="site-nav">
-				<ul>
-					<li><a href="/services/">Services</a></li>
-					<li><a href="/about-me/">About me</a></li>
-					<li><a href="/blog/">Blog</a></li>
-					<li><a class="button" data-variation="small" href="/get-in-touch/">Get in touch</a></li>
-				</ul>
-			</nav>
-		</header>
+        {% include 'site-header.njk' %}
 
 		<main class="site-content">
 			{{ content | safe }}

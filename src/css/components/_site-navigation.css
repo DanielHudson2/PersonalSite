@@ -1,0 +1,96 @@
+.site-navigation {
+    &__list {
+        align-items: center;
+        display: flex;
+        gap: var(--global--spacing--xl);
+    }
+
+    &__link {
+        color: var(--global--color--contrast);
+        padding-block: var(--global--spacing--sm);
+        position: relative;
+        text-decoration: none;
+
+        &::after {
+            background-color: var(--global--color--contrast);
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 0;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform var(--global--transition--duration--normal) ease-out;
+            width: 100%;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+    }
+
+    &__toggle {
+        --toggle-icon-size: 24px;
+        --toggle-icon-color: var(--global--color--contrast);
+        --toggle-icon-line-height: 2px;
+        --toggle-icon-line-radius: 10px;
+
+        appearance: none;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        display: block;
+        height: var(--toggle-icon-size);
+        padding: 0;
+
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__toggle-icon {
+        display: block;
+        width: var(--toggle-icon-size);
+        height: var(--toggle-icon-line-height);
+        cursor: pointer;
+        z-index: 3;
+        position: relative;
+        background-color: var(--toggle-icon-color);
+        border-radius: var(--toggle-icon-line-radius);
+        transition: background-color 0.3s;
+
+        &:before, &:after {
+            content: "";
+            height: var(--toggle-icon-line-height);
+            width: 100%;
+            display: block;
+            background-color: var(--toggle-icon-color);
+            position: absolute;
+            border-radius: var(--toggle-icon-line-radius);
+            transition: transform 0.3s;
+        }
+
+        &::before {
+            top: 8px;
+        }
+
+        &::after {
+            bottom: 8px;
+        }
+
+        .active & {
+            background-color: transparent;
+
+            &::after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+
+            &::before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
