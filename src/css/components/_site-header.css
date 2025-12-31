@@ -1,8 +1,31 @@
 .site-header {
-    background-color: var(--global--color--base);
     position: sticky;
+    transition: top var(--global--transition--duration--normal) cubic-bezier(0.215, 0.610, 0.355, 1);
     top: 0;
     z-index: 100;
+
+    &.is-unpinned {
+        top: -100%;
+    }
+
+    &.is-pinned {
+        backdrop-filter: blur(5px);
+        border-bottom: 2px solid var(--global--color--brand);
+
+        &::after {
+            opacity: 0.9;
+        }
+    }
+
+    &::after {
+        background-color: var(--global--color--base);
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
 
     &__inner {
         align-items: center;
@@ -10,6 +33,6 @@
         flex-wrap: wrap;
         gap: var(--global--spacing--xl);
         justify-content: space-between;
-        padding-block: var(--global--spacing--xl);
+        padding-block: var(--global--spacing--lg);
     }
 }
