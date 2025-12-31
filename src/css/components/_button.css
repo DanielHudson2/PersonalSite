@@ -1,0 +1,38 @@
+button, .button {
+    background: transparent;
+    border: 1px solid var(--global--color--brand);
+    color: var(--global--color--brand);
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding-block: var(--global--spacing--xs);
+    padding-inline: var(--global--spacing--md);
+    position: relative;
+    text-decoration: none;
+    transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    &::after {
+        background-color: var(--global--color--brand);
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        transition: height var(--global--transition--duration--normal) cubic-bezier(0.215, 0.610, 0.355, 1);
+        z-index: -1;
+    }
+
+    & + button, & + .button {
+        margin-left: var(--global--spacing--md);
+    }
+
+    &:hover {
+        color: var(--global--color--primitive--secondary--500);
+
+        &::after {
+            height: 100%;
+        }
+    }
+}

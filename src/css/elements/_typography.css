@@ -1,0 +1,55 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--global--color--contrast);
+	font-family: var(--global--font-family--secondary);
+	font-weight: var(--global--typography--font-weight--heading);
+	letter-spacing: var(--global--typography--letter-spacing--normal);
+	text-wrap: balance;
+}
+
+h1 {
+    font-size: var(--global--font-size--3-xl);
+	line-height: var(--global--typography--line-height--tight);
+}
+
+h2 {
+    font-size: var(--global--font-size--2-xl);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+h3 {
+    font-size: var(--global--font-size--xl);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+h4 {
+    font-size: var(--global--font-size--lg);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+h5 {
+    font-size: var(--global--font-size--md);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+h6 {
+    font-size: var(--global--font-size--sm);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+[data-variation="hero"] {
+    font-size: var(--global--font-size--5-xl);
+    line-height: var(--global--typography--line-height--tight);
+}
+
+[data-color="brand"] {
+    color: var(--global--color--brand);
+}
+
+a {
+    color: var(--global--color--contrast);
+}

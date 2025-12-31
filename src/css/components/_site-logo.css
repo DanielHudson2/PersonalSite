@@ -1,6 +1,18 @@
 .site-logo {
+    --logo-size: 40px;
+
+    z-index: 3;
+
+    @media (min-width: 1024px) {
+        --logo-size: 80px;
+    }
 
     a, img {
         display: block;
+    }
+
+    img {
+        height: var(--logo-size);
+        width: var(--logo-size);
     }
 }

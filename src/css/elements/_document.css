@@ -11,4 +11,8 @@ body {
     font-weight: var(--global--typography--font-weight--body);
     letter-spacing: var(--global--typography--letter-spacing--normal);
     line-height: var(--global--typography--line-height--normal);
+
+    &.menu-open {
+        overflow: hidden;
+    }
 }
