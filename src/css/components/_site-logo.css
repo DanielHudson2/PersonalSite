@@ -1,5 +1,5 @@
 .site-logo {
-    --logo-size: 40px;
+    --logo-size: 50px;
 
     z-index: 3;
 
@@ -9,6 +9,8 @@
 
     svg {
         fill: none;
+        height: var(--logo-size);
+        width: var(--logo-size);
 
         path[stroke-width='4'] {
             stroke: var(--global--color--brand);
@@ -19,12 +21,7 @@
         }
     }
 
-    a, img {
+    a {
         display: block;
-    }
-
-    img {
-        height: var(--logo-size);
-        width: var(--logo-size);
     }
 }

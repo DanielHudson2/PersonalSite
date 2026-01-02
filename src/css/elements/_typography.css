@@ -52,10 +52,15 @@ h6 {
 [data-variation="hero"] {
     font-size: var(--global--font-size--5-xl);
     line-height: var(--global--typography--line-height--tight);
+    margin-top: 0;
 }
 
 [data-color="brand"] {
     color: var(--global--color--brand);
+}
+
+[data-style="italic"] {
+    font-style: italic;
 }
 
 a {

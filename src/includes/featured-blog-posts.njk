@@ -1,5 +1,5 @@
 <div class="featured-blog-posts">
-    <h2 class="featured-blog-posts__title">Latest From My Blog</h2>
+    <h2 class="featured-blog-posts__title">Latest From <span data-color="brand" data-style="italic">My Blog</span></h2>
     <ul class="featured-blog-posts__list">
         {% set homeblogposts = collections.post | sortByDate | limit(5) %}
 

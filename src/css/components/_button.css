@@ -6,6 +6,9 @@ button, .button {
     display: inline-block;
     font-family: var(--global--font-family--primary);
     font-size: var(--global--font-size--md);
+    font-weight: var(--global--typography--font-weight--body);
+    letter-spacing: var(--global--typography--letter-spacing--normal);
+    line-height: var(--global--typography--line-height--normal);
     overflow: hidden;
     padding-block: var(--global--spacing--xs);
     padding-inline: var(--global--spacing--md);

@@ -4,44 +4,46 @@ description: Find contact details to get in touch with Gloucester web developer 
 layout: base.njk
 ---
 <div class="container">
-    <h1>Get in touch</h1>
-    <p>You can get in touch via socials or this form.</p>
-    <p>I'll get back to you as soon as I can.</p>
+    <div class="group">
+        <h1>Get In Touch</h1>
+        <p>You can get in touch via socials or this form.</p>
+        <p>I'll get back to you as soon as I can.</p>
 
-    <form
-        name="get-in-touch"
-        method="POST"
-        data-netlify="true"
-    >
-        <p>
-            <label for="name">Name</label>
-            <input
-                type="text"
-                name="name"
-                class="focus-ring"
-            />
-        </p>
+        <form
+            name="get-in-touch"
+            method="POST"
+            data-netlify="true"
+        >
+            <p>
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    name="name"
+                    class="focus-ring"
+                />
+            </p>
 
-        <p>
-            <label for="contact-email">Contact Email <small>(required)</small></label>
-            <input
-                type="email"
-                name="contact-email"
-                class="focus-ring"
-                required
-            />
-        </p>
+            <p>
+                <label for="contact-email">Contact Email <small>(required)</small></label>
+                <input
+                    type="email"
+                    name="contact-email"
+                    class="focus-ring"
+                    required
+                />
+            </p>
 
-        <p>
-            <label for="message">Message</label>
-            <textarea
-                name="message"
-                class="focus-ring"
-            ></textarea>
-        </p>
+            <p>
+                <label for="message">Message</label>
+                <textarea
+                    name="message"
+                    class="focus-ring"
+                ></textarea>
+            </p>
 
-        <p>
-            <button type="submit">Get in touch</button>
-        </p>
-    </form>
+            <p>
+                <button type="submit">Get in touch</button>
+            </p>
+        </form>
+    </div>
 </div>
