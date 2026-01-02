@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Visit My Twitter",
+        "link": "https://twitter.com/DanielHudsonDev",
+        "image": "/assets/images/twitter.svg",
+        "rel": "nofollow noopener noreferrer"
+    },
+    {
+        "title": "Visit My LinkedIn",
+        "link": "https://www.linkedin.com/in/danielchudson/",
+        "image": "/assets/images/linkedin.svg",
+        "rel": "nofollow noopener noreferrer"
+    },
+        {
+        "title": "Visit My GitHub",
+        "link": "https://github.com/DanielHudson2",
+        "image": "/assets/images/github.svg",
+        "rel": "nofollow noopener noreferrer"
+    },
+    {
+        "title": "View My RSS Feed",
+        "link": "/feed.xml",
+        "image": "/assets/images/rss.svg",
+        "rel": ""
+    }
+]

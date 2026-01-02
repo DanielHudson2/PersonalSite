@@ -1,0 +1,20 @@
+<ul class="social-links">
+    {% for socialLink in socialLinks %}
+        <li class="social-links__item">
+            <a
+                href="{{socialLink.link}}"
+                title="{{socialLink.title}}"
+                rel="{{socialLink.rel}}"
+                class="social-links__link"
+            >
+                <img
+                    class="social-links__image"
+                    src="{{socialLink.image}}"
+                    height="20"
+                    width="20"
+                    alt="{{socialLink.title}}"
+                />
+            </a>
+        </li>
+    {% endfor %}
+</ul>

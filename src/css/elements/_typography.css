@@ -9,6 +9,14 @@ h6 {
 	font-weight: var(--global--typography--font-weight--heading);
 	letter-spacing: var(--global--typography--letter-spacing--normal);
 	text-wrap: balance;
+
+    + p {
+        margin-top: var(--global--spacing--md);
+    }
+
+    + :is(h1, h2, h3, h4, h5, h6) {
+        margin-top: var(--global--spacing--lg);
+    }
 }
 
 h1 {
@@ -52,4 +60,15 @@ h6 {
 
 a {
     color: var(--global--color--contrast);
+}
+
+p {
+
+    + :is(h1, h2, h3, h4, h5, h6) {
+        margin-top: var(--global--spacing--xl);
+    }
+
+    + p {
+        margin-top: var(--global--spacing--md);
+    }
 }

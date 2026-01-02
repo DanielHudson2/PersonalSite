@@ -22,33 +22,9 @@
 
 		<main class="site-content">
 			{{ content | safe }}
-
-			<ul class="socials">
-				<li><a href="https://twitter.com/DanielHudsonDev" target="_blank" rel="nofollow noopener noreferrer" title="Twitter"><img src="/assets/images/twitter.svg" width="20" height="20" alt="Twitter Logo" /></a></li>
-				<li><a href="https://www.linkedin.com/in/danielchudson/" target="_blank" rel="nofollow noopener noreferrer" title="Linkedin"><img src="/assets/images/linkedin.svg" width="20" height="20" alt="Linkedin Logo" /></a></li>
-				<li><a href="https://github.com/DanielHudson2" target="_blank" rel="nofollow noopener noreferrer" title="Github"><img src="/assets/images/github.svg" width="20" height="20" alt="Github Logo" /></a></li>
-				<li><a href="https://codepen.io/DanielHudsonDev" target="_blank" rel="nofollow noopener noreferrer" title="Codepen"><img src="/assets/images/codepen.svg" width="20" height="20" alt="Codepen Logo" /></a></li>
-				<li><a href="/feed.xml" target="_blank" title="RSS Feed"><img src="/assets/images/rss.svg" width="20" height="20" alt="RSS Logo" /></a></li>
-			</ul>
 		</main>
 
-		<footer class="site-footer">
-			{%- if page.url !== '/get-in-touch/' -%}
-                <section data-variation="center">
-                    <div class="cta">
-                        <h3 class="h2">Lets work together</h3>
-                        <p>Got a project in mind? Get in touch to find out how I can help you make it a reality.</p>
-                        <p>
-                            <a href="/get-in-touch/" class="button">Get in touch</a>
-                        </p>
-                    </div>
-                </section>
-			{%- endif -%}
-
-			<section>
-				<p data-variation="tiny">Designed and Developed by Daniel Hudson</p>
-			</section>
-		</footer>
+        {% include 'site-footer.njk' %}
 
 		<script type="text/javascript" src="/js/app.js" defer></script>
 	</body>

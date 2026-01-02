@@ -86,6 +86,8 @@
     --global--layout--wide: 1280px;
     --global--layout--normal: 768px;
     --global--layout--edge: var(--global--spacing--2-xl);
+    --global--layout--section--spacing: var(--global--spacing--4-xl);
+    --global--layout--section--gap: var(--global--spacing--xl);
 
     /* Typography */
     --global--typography--font-weight--body: 400;
