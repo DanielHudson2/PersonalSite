@@ -1,0 +1,12 @@
+.featured-blog-posts {
+
+    > * + * {
+        margin-top: var(--global--layout--section--gap);
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: var(--global--layout--section--gap);
+    }
+}

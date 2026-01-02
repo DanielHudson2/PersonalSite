@@ -1,0 +1,9 @@
+.columns {
+    display: grid;
+    gap: var(--global--layout--section--spacing);
+    grid-template-columns: 1fr;
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr;
+    }
+}

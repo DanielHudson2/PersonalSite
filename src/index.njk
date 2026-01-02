@@ -5,63 +5,28 @@ layout: base.njk
 ---
 
 <div class="container-wide">
-    <p data-color="brand">Hello there, i'm</p>
-    <h1 data-variation="hero">Daniel Hudson <br />I'm a <span data-color="brand">Web Developer</span></h1>
-
-    <div class="grid" data-variation="col-50">
-
-        <div class="column">
-
-            <p>I'm a seasoned Web Developer with 8 years of expertise in creating engaging user interfaces and interactive web applications, I have a proven track record of delivering visually appealing websites with seamless user experiences.</p>
-            <p>With a deep understanding of HTML, CSS, and JavaScript, I am skilled in creating responsive and accessible websites that work well on all devices.</p>
-
-            <p><a class="button" href="/about-me/">About me</a><a class="button" href="/blog/">Blog</a></p>
-
-            <h2 class="h3">Latest from my blog</h2>
-            <ul class="featured-blogs">
-                {% set homeblogposts = collections.post | sortByDate | limit(5) %}
-                {%- for post in homeblogposts -%}
-                <li>
-                    <a href="{{ post.url }}">{{ post.data.title }}</a>
-                    <time datetime="{{ post.data.date }}">{{ post.data.postDate }}</time>
-                </li>
-                {%- endfor -%}
-            </ul>
-            <p><a class="button" href="/blog/">View all posts</a></p>
-
-        </div>
-
-        <div class="column text-align--center">
-
-            <picture>
-                <source srcset="/assets/images/daniel-hudson-front-end-developer.webp" type="image/webp" />
-                <img src="/assets/images/daniel-hudson-front-end-developer.jpg" width="837" height="837" alt="Web Developer Daniel Hudson" />
-            </picture>
-
-        </div>
-
+    <div class="group">
+        <p data-color="brand">Hello there, i'm</p>
+        <h1 data-variation="hero">Daniel Hudson <br />I'm a <span data-color="brand">Web Developer</span></h1>
+        <p class="width-contained">I'm a seasoned Web Developer with 8 years of expertise in creating engaging user interfaces and interactive web applications, I have a proven track record of delivering visually appealing websites with seamless user experiences.</p>
+        <p class="width-contained">With a deep understanding of HTML, CSS, and JavaScript, I am skilled in creating responsive and accessible websites that work well on all devices.</p>
+        <p><a class="button" href="/about-me/">About me</a><a class="button" href="/blog/">Blog</a></p>
     </div>
 
-    <h2>Services</h2>
-
-    <div class="[ feature-grid ] [ grid ]" role="list">
-
-        {% for page in collections.servicesPages %}
-
-            <div class="feature">
-
-                <h3><a href="{{ page.url }}">{{ page.data.title }}</a></h3>
-
-                <p>{{ page.data.shortDescription }}</p>
-
-                <div>
-                    <a class="button" data-variation="primary" href="{{ page.url }}">Read more</a>
-                </div>
-
+    <div class="group">
+        <div class="columns">
+            <div class="column">
+                {% include 'featured-blog-posts.njk' %}
             </div>
 
-        {% endfor %}
-
+            <div class="column">
+                <div class="decorated-image">
+                    <picture>
+                        <source srcset="/assets/images/daniel-hudson-front-end-developer.webp" type="image/webp" />
+                        <img src="/assets/images/daniel-hudson-front-end-developer.jpg" width="837" height="837" alt="Web Developer Daniel Hudson" />
+                    </picture>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>

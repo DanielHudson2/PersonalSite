@@ -1,0 +1,3 @@
+.width-contained {
+    max-width: var(--global--layout--normal);
+}

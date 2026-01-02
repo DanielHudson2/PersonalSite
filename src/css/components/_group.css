@@ -1,0 +1,6 @@
+.group {
+
+    + .group {
+        margin-top: var(--global--layout--section--spacing);
+    }
+}

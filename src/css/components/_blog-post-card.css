@@ -1,0 +1,20 @@
+.blog-post-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--global--spacing--sm);
+
+    &__title {
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__description {
+        font-size: var(--global--font-size--sm);
+    }
+}

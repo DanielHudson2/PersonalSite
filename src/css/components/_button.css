@@ -1,6 +1,6 @@
 button, .button {
     background: transparent;
-    border: 1px solid var(--global--color--brand);
+    border: 2px solid var(--global--color--brand);
     color: var(--global--color--brand);
     cursor: pointer;
     display: inline-block;
@@ -9,6 +9,7 @@ button, .button {
     padding-inline: var(--global--spacing--md);
     position: relative;
     text-decoration: none;
+    text-transform: capitalize;
     transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
     &::after {
@@ -33,6 +34,23 @@ button, .button {
 
         &::after {
             height: 100%;
+        }
+    }
+
+    &[data-variation="underline"] {
+        border: none;
+        color: var(--global--color--brand);
+        font-size: var(--global--font-size--sm);
+        padding: unset;
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--global--color--brand);
+            text-decoration: none;
+        }
+
+        &::after {
+            display: none;
         }
     }
 }
