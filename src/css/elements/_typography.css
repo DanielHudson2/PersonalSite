@@ -68,7 +68,7 @@ p {
         margin-top: var(--global--spacing--xl);
     }
 
-    + p {
+    + :is(p, ul) {
         margin-top: var(--global--spacing--md);
     }
 }

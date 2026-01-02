@@ -4,6 +4,8 @@ button, .button {
     color: var(--global--color--brand);
     cursor: pointer;
     display: inline-block;
+    font-family: var(--global--font-family--primary);
+    font-size: var(--global--font-size--md);
     overflow: hidden;
     padding-block: var(--global--spacing--xs);
     padding-inline: var(--global--spacing--md);

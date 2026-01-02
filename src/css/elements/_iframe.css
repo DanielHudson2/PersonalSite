@@ -1,0 +1,4 @@
+iframe {
+    margin-block: var(--global--spacing--xl);
+    width: 100%;
+}

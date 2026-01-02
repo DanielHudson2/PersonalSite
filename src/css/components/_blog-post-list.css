@@ -1,0 +1,5 @@
+.blog-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--global--layout--section--gap);
+}

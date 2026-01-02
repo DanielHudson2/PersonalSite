@@ -1,0 +1,9 @@
+pre {
+    background-color: var(--global--color--primitive--neutral--1000);
+    padding: var(--global--spacing--xl);
+    margin-block: var(--global--spacing--xl);
+
+    code {
+        color: var(--global--color--primitive--primary--500);
+    }
+}
