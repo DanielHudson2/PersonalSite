@@ -52,6 +52,8 @@
     --global--color--brand: var(--global--color--primitive--primary--500);
     --global--color--base: var(--global--color--primitive--secondary--500);
     --global--color--contrast: var(--global--color--primitive--secondary--50);
+    --global--color--focus: #fd8;
+    --global--color--focus-accent: var(--global--color--neutral--950);
 
     /* Font Sizes */
     --global--font-size--xs: 12px;

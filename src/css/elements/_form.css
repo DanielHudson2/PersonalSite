@@ -1,0 +1,25 @@
+form {
+
+    label, input, textarea {
+        display: block;
+        width: 100%
+    }
+
+    label {
+        margin-bottom: var(--global--spacing--xs);
+    }
+
+    textarea {
+        min-height: 100px;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    input, textarea {
+        padding: var(--global--spacing--sm);
+
+        &:invalid {
+            border-color: var(--global--color--primitive--error--200);
+        }
+    }
+}

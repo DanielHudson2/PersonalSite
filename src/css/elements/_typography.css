@@ -10,7 +10,7 @@ h6 {
 	letter-spacing: var(--global--typography--letter-spacing--normal);
 	text-wrap: balance;
 
-    + p {
+    + :is(p, ul, iframe, form) {
         margin-top: var(--global--spacing--md);
     }
 
@@ -68,7 +68,7 @@ p {
         margin-top: var(--global--spacing--xl);
     }
 
-    + :is(p, ul) {
+    + :is(p, ul, iframe, form) {
         margin-top: var(--global--spacing--md);
     }
 }
