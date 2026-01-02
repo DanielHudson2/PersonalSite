@@ -7,13 +7,21 @@
                 rel="{{socialLink.rel}}"
                 class="social-links__link"
             >
-                <img
-                    class="social-links__image"
-                    src="{{socialLink.image}}"
-                    height="20"
-                    width="20"
-                    alt="{{socialLink.title}}"
-                />
+                {% if socialLink.platform == "twitter" %}
+                    {% include './svgs/twitter.njk' %}
+                {% endif %}
+
+                {% if socialLink.platform == "linkedin" %}
+                    {% include './svgs/linkedin.njk' %}
+                {% endif %}
+
+                {% if socialLink.platform == "github" %}
+                    {% include './svgs/github.njk' %}
+                {% endif %}
+
+                {% if socialLink.platform == "rss" %}
+                    {% include './svgs/rss.njk' %}
+                {% endif %}
             </a>
         </li>
     {% endfor %}

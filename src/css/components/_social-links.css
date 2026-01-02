@@ -1,5 +1,30 @@
 .social-links {
+    --icon-size: 25px;
+
     display: flex;
     flex-wrap: wrap;
     gap: var(--global--spacing--lg);
+
+    &__item {
+        transition: transform var(--global--transition--duration--normal) cubic-bezier(0.215, 0.610, 0.355, 1);
+
+        &:hover {
+            transform: rotate(15deg);
+        }
+    }
+
+    &__link {
+        display: block;
+        height: var(--icon-size);
+        width: var(--icon-size);
+    }
+
+    svg {
+        height: var(--icon-size);
+        width: var(--icon-size);
+
+        path {
+            fill: var(--global--color--brand);
+        }
+    }
 }

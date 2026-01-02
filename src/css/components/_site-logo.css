@@ -7,6 +7,18 @@
         --logo-size: 80px;
     }
 
+    svg {
+        fill: none;
+
+        path[stroke-width='4'] {
+            stroke: var(--global--color--brand);
+        }
+
+        path:not([stroke-width='4']) {
+            fill: var(--global--color--brand);
+        }
+    }
+
     a, img {
         display: block;
     }
