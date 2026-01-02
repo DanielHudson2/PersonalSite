@@ -1,0 +1,28 @@
+.theme-toggle {
+    --icon-size: 25px;
+    --icon-url: url(../../assets/svgs/dark-theme.svg);
+
+    body.theme-light & {
+        --icon-url: url(../../assets/svgs/light-theme.svg);
+    }
+
+    all: unset;
+    z-index: 3;
+    font-size: 0;
+    cursor: pointer;
+
+    &::before {
+        content: '';
+        mask-image: var(--icon-url);
+        background-color: var(--global--color--contrast);
+        width: var(--icon-size);
+        height: var(--icon-size);
+        display: block;
+        mask-size: contain;
+        mask-position: center;
+    }
+
+    &::after {
+        display: none;
+    }
+}

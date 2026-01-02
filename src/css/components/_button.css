@@ -17,6 +17,10 @@ button, .button {
     text-transform: capitalize;
     transition: all .5s cubic-bezier(0.215, 0.610, 0.355, 1);
 
+    & + button, & + .button {
+        margin-left: var(--global--spacing--md);
+    }
+
     &:focus-visible {
         outline: 2px solid var(--global--color--focus);
         outline-offset: 2px;
@@ -35,12 +39,8 @@ button, .button {
         z-index: -1;
     }
 
-    & + button, & + .button {
-        margin-left: var(--global--spacing--md);
-    }
-
     &:hover {
-        color: var(--global--color--primitive--secondary--500);
+        color: var(--global--color--base);
 
         &::after {
             height: 100%;

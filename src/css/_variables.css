@@ -52,8 +52,14 @@
     --global--color--brand: var(--global--color--primitive--primary--500);
     --global--color--base: var(--global--color--primitive--secondary--500);
     --global--color--contrast: var(--global--color--primitive--secondary--50);
-    --global--color--focus: #fd8;
+    --global--color--focus: #f57600;
     --global--color--focus-accent: var(--global--color--neutral--950);
+
+    body.theme-light {
+        --global--color--brand: var(--global--color--primitive--primary--900);
+        --global--color--base: var(--global--color--primitive--secondary--50);
+        --global--color--contrast: var(--global--color--primitive--secondary--500);
+    }
 
     /* Font Sizes */
     --global--font-size--xs: 12px;
