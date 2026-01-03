@@ -1,45 +1,41 @@
 class ThemeToggle {
+	static STORAGE_KEY = 'theme';
+	static LIGHT_CLASS = 'theme-light';
+
 	constructor() {
 		this.body = document.body;
-		this.prefersLightTheme = window.matchMedia(
-			'(prefers-color-scheme: light)'
-		);
-		this.themeToggle = document.querySelector('.theme-toggle');
-		this.lightThemeClass = 'theme-light';
-		this.localStorageKey = 'selected-theme';
-		this.currentTheme = localStorage.getItem(this.localStorageKey);
+		this.toggleButton = document.querySelector('.theme-toggle');
+		this.mediaQuery = window.matchMedia('(prefers-color-scheme: light)');
 	}
 
 	init() {
-		if (!this.currentTheme) {
-			if (this.prefersLightTheme.matches) {
-				this.body.classList.add(this.lightThemeClass);
-			} else {
-				this.body.classList.remove(this.lightThemeClass);
-			}
-		} else {
-			if (this.currentTheme === 'light-theme') {
-				this.body.classList.add(this.lightThemeClass);
-			} else if (this.currentTheme === 'dark-theme') {
-				this.body.classList.remove(this.lightThemeClass);
-			}
-		}
+		const savedTheme = localStorage.getItem(ThemeToggle.STORAGE_KEY);
+		const theme =
+			savedTheme ?? (this.mediaQuery.matches ? 'light' : 'dark');
 
-		if (this.themeToggle) {
-			this.themeToggle.addEventListener('click', () =>
-				this.toggleTheme()
+		this.applyTheme(theme);
+
+		this.toggleButton?.addEventListener('click', () => {
+			const isLight = this.body.classList.contains(
+				ThemeToggle.LIGHT_CLASS
 			);
+			this.setTheme(isLight ? 'dark' : 'light');
+		});
+
+		if (!savedTheme) {
+			this.mediaQuery.addEventListener('change', (e) => {
+				this.applyTheme(e.matches ? 'light' : 'dark');
+			});
 		}
 	}
 
-	toggleTheme() {
-		if (this.body.classList.contains(this.lightThemeClass)) {
-			this.body.classList.remove(this.lightThemeClass);
-			localStorage.setItem(this.localStorageKey, 'dark-theme');
-		} else {
-			this.body.classList.add(this.lightThemeClass);
-			localStorage.setItem(this.localStorageKey, 'light-theme');
-		}
+	setTheme(theme) {
+		localStorage.setItem(ThemeToggle.STORAGE_KEY, theme);
+		this.applyTheme(theme);
+	}
+
+	applyTheme(theme) {
+		this.body.classList.toggle(ThemeToggle.LIGHT_CLASS, theme === 'light');
 	}
 }
 
