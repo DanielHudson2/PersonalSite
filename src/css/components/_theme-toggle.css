@@ -20,9 +20,18 @@
         display: block;
         mask-size: contain;
         mask-position: center;
+        transform-origin: center;
+        transition: transform var(--global--transition--duration--normal) cubic-bezier(0.215, 0.610, 0.355, 1);;
     }
 
     &::after {
         display: none;
+    }
+
+    &:hover {
+
+        &::before {
+            transform: scale(1.1);
+        }
     }
 }

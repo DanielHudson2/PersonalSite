@@ -67,7 +67,7 @@ a {
     color: var(--global--color--contrast);
 }
 
-p {
+p, ul {
 
     + :is(h1, h2, h3, h4, h5, h6) {
         margin-top: var(--global--spacing--xl);

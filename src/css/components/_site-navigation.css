@@ -102,11 +102,13 @@
         cursor: pointer;
         display: block;
         height: var(--toggle-icon-size);
+        margin-left: auto;
         padding: 0;
         z-index: 3;
 
         @media (min-width: 1024px) {
             display: none;
+            margin-left: unset;
         }
 
         &::after {

@@ -1,0 +1,10 @@
+.site-content {
+
+    ul {
+        list-style-type: disc;
+
+        li::marker {
+            color: var(--global--color--brand);
+        }
+    }
+}
