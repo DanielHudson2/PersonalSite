@@ -6,7 +6,7 @@ gsap.registerPlugin(SplitText);
 class HeroTitleAnimation {
 	constructor() {
 		this.title = document.querySelector('h1[data-variation="hero"]');
-		this.type = 'chars';
+		this.type = 'words, chars';
 		this.split = null;
 	}
 
